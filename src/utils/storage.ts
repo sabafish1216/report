@@ -14,7 +14,6 @@ export const getReports = (): Report[] => {
 
 export const saveReport = (reportData: ReportFormData): Report => {
   try {
-    const reports = getReports();
     const newReport: Report = {
       id: Date.now().toString(),
       ...reportData,
